@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-style: italic;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#answer {
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: aquamarine;
+}
+
+button {
+    width: 50%;
+    margin: auto;
+}
+
+#app,
+#info {
+    margin: 10px;
+    width: 50%;
+}
+
+#settings {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

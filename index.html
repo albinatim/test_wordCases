@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Склонение существительных по падежам</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Склонение имен существительных</h1>
+    </header>
+
+    <main>
+
+        <section id='info'>
+            <p>
+                Небольшая инструкция по использованию данного приложения:
+                <ol>
+                    <li>Введите существительное в единственном числе в именительном падеже</li>
+                    <li>Выберите падеж из списка</li>
+                    <li>Нажмите на кнопку</li>
+                </ol>
+                Вуаля! Вы получили слово в нужном падеже!
+            </p>
+        </section>
+        <div id='app'>
+            <form id='settings' action="#" method='#' onsubmit="return false;">
+                <label for='word'>Введите существительное:
+            <input name='word' id="word" type='text' placeholder='' required></label>
+                <fieldset>
+                    <legend>
+                        Выберите падеж
+                    </legend>
+
+                    <label for="genitive ">
+                    <input type='radio' id='genitive' name='case' value="genitive" >
+                    Родительный
+                </label>
+                    <label for="dative ">
+                    <input type='radio' id='dative' name='case' value="dative">
+               Дательный
+            </label>
+                    <label for="accusative ">
+                    <input type='radio' id='accusative' name='case' value="accusative">
+                Винительный
+            </label>
+                    <label for="ablative ">
+                    <input type='radio' id='ablative' name='case' value="ablative">
+                    Творительный
+                </label>
+                    <label for="prepositional "> 
+                    <input type='radio' id='prepositional' name='case' value="prepositional">
+                Предложный
+            </label>
+                </fieldset>
+                <button id=btn type="submit " onclick="btnClick()">Просклонять слово!</button>
+            </form>
+            <p id='answer'></p>
+        </div>
+
+    </main>
+    <footer>
+        Сделано для тестового задания ;) <a href="mailto:albinatimerbayeva@gmail.com">email</a> для обратной связи
+        <br> Правила взяты с сайта <a href='https://budu5.com/manual/chapter/31'>budu5.com</a>
+    </footer>
+</body>
+
+</html>
